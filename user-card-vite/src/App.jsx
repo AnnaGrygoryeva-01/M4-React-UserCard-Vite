@@ -1,10 +1,13 @@
-import { useState } from "react";
 import "./App.css";
+import { user } from "./components/data/userData";
+import UserInfo from "./components/UserInfo";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <></>;
+  return (
+    <>
+      <UserInfo user={user} />
+    </>
+  );
 }
 
 export default App;
